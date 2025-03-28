@@ -2,26 +2,25 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  color: white;
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: weight;
+
   font-style: normal;
 }
 
 body {
-  background-color: rgb(54, 54, 54);
+  background-color: rgb(24, 24, 24);
 }
-.container {
+/*----Cabeçaho----*/
+.container0 {
   display: flex;
   width: 100%;
+  color: white;
 }
-
 .bk-cabecalho {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  color: aqua;
   background-color: black;
 }
 .bk-cabecalho img {
@@ -36,6 +35,7 @@ body {
   margin: 8px;
 }
 .botao a {
+  color: white;
   padding: 10px 30px;
   border-radius: 5px;
   background-color: rgb(0, 130, 0);
@@ -57,6 +57,10 @@ a:link {
   font-weight: bold;
   text-decoration: none;
 }
+a:active,
+:visited {
+  color: white;
+}
 .botao a:hover {
   background-color: rgb(0, 170, 0);
 }
@@ -65,42 +69,202 @@ a:link {
 }
 
 /*----Separação do Cabeçalho pra o Corpo do Documento----*/
-
-.bk-card {
-  display: flex;
-  justify-content: space-between;
-  background-color: black;
+/*----Corpo do Documento 1----*/
+.container1 {
   width: 100%;
-  height: 760px;
-  margin: 20px;
-  border-radius: 8px;
+  color: white;
+  margin-bottom: 50px;
 }
-.bk-card-esquerdo {
-  width: 45%;
-  height: 730px;
+
+.bk-card-1 {
+  font-size: 20px;
   background: url("./assets/businesBorrado.jpg") no-repeat center/cover;
-  margin: 15px;
-  border-radius: 8px;
-  align-items: center;
+}
+.bk-card-1 ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
 }
 .texto {
+  align-items: start;
   padding: 15px;
   border-radius: 8px;
-  margin: auto;
-  margin-top: 10px;
+  margin: 10px auto;
   width: 95%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+.texto a:link {
+  text-decoration: underline;
 }
 ul,
 li {
   list-style: none;
 }
-.bk-card-direito{
-   width: 55%;
-  height: 730px;
-  background-color: rgb(19, 19, 19);
-  margin: 15px;
-  border-radius: 8px;
+/*----Corpo do Documento 2----*/
+.container2 {
+  display: flex;
+  width: 100%;
+  color: white;
+}
+.bk-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  width: 100%;
+  padding: 50px;
+}
+.disp{
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
+.texto2{
+  align-items: center;
+  text-align: center;
+  
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px auto 50px;
+  width: 95%;
+  color: rgba(255, 255, 255,0.8);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/*----Layout de descktop----*/
 
+.computador {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+}
+
+.pc-tela {
+  display: flex;
+  width: 100%;
+  border: 8px solid rgb(97, 97, 97);
+  height: 300px;
+  background: url("./assets/instagram.png") no-repeat top center/cover;
+}
+.pc-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  border-radius: 0px 0px 8px 8px;
+}
+.pc-botao {
+  width: 40px;
+  height: 50%;
+  border-radius: 50%;
+  background-color: rgb(112, 112, 112);
+}
+.pescoco {
+  width: 30%;
+  height: 80px;
+  background-color: rgb(77, 77, 77);
+}
+.base {
+  width: 50%;
+  height: 30px;
+  background-color: rgb(121, 121, 121);
+  border-radius: 8px 8px 0px 0px;
+}
+
+/*----Interfaçe do instagrama no descktop----*/
+
+.pc-tela ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.pc-tela li {
+  padding: 0px;
+}
+.pc-tela img {
+  padding: 0px;
+  width: 70px;
+}
+.bt-instagram {
+  padding: 0px;
+  margin: 10px;
+}
+.bt-instagram a {
+  text-align: center;
+  width: 130px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+.bt-instagram a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: solid rgba(255, 255, 255, 0.2);
+}
+.social-links {
+  flex-direction: row;
+  font-weight: 50px;
+  padding: 0px;
+  gap: 5px;
+}
+
+.social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 50%;
+}
+.social-links a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/*----Layout de celular com interface do instagram ----*/
+
+.celular {
+  width: 300px;
+}
+.celular-tela {
+  display: flex;
+  border: 8px solid rgb(97, 97, 97);
+  height: 450px;
+  background: url("./assets/Instagram.png") no-repeat top center/cover;
+  border-radius: 8px 8px 0px 0px;
+}
+.cell-meio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border: 8px solid rgb(255, 255, 255);
+  border-top: 0px solid black;
+  border-radius: 0px 0px 8px 8px;
+}
+.cell-botao {
+  width: 20px;
+  height: 50%;
+  border-radius: 50%;
+  background-color: rgb(112, 112, 112);
+}
+
+/*----Interfaçe do instagrama no celular----*/
+
+.celular-tela ul,
+li {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.celular-tela img {
+  width: 70px;
+}
