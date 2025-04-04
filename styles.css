@@ -152,7 +152,7 @@ li {
   width: 100%;
   border: 8px solid rgb(97, 97, 97);
   height: 300px;
-  background: url("./assets/instagram.png") no-repeat top center/cover;
+  background: url("./assets/Instagram.png") no-repeat top center/cover;
 }
 .pc-meio {
   display: flex;
